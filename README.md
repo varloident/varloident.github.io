@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,13 +11,17 @@
             background-color: #ffffff;
             color: #000000;
         }
-        header, footer {
+        header {
             background-color: #000000;
             color: #ffffff;
             padding: 20px;
             text-align: center;
             width: 100%;
             box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
         }
         header h1 {
             margin: 0;
@@ -28,6 +31,10 @@
             display: flex;
             justify-content: center;
             background-color: #000000;
+            position: fixed;
+            top: 84px; /* Adjusted to account for header height */
+            width: 100%;
+            z-index: 999;
         }
         nav a {
             color: #ffffff;
@@ -48,6 +55,7 @@
             justify-content: center;
             color: #ffffff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: 120px; /* Adjusted to account for fixed header and nav */
         }
         .hero h2 {
             font-size: 2em;
@@ -56,6 +64,7 @@
         .content {
             padding: 20px;
             text-align: center;
+            margin-top: 120px; /* Ensure content is not hidden behind fixed elements */
         }
         .product {
             display: inline-block;
@@ -75,6 +84,10 @@
             font-size: 1.2em;
         }
         footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
             position: fixed;
             bottom: 0;
             left: 0;
@@ -90,7 +103,6 @@
         <a href="#home">Home</a>
         <a href="#products">Products</a>
         <a href="#about">About</a>
-        <a href="#contact">Contact</a>
     </nav>
     <div class="hero">
         <h2>Your Source for Trending TikTok Products</h2>
@@ -118,4 +130,3 @@
     </footer>
 </body>
 </html>
-```
