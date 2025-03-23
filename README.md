@@ -11,7 +11,7 @@
             background-color: #ffffff;
             color: #000000;
         }
-        header, footer {
+        header {
             background-color: #000000;
             color: #ffffff;
             padding: 20px;
@@ -19,11 +19,9 @@
             width: 100%;
             box-sizing: border-box;
             position: fixed;
+            top: 0;
             left: 0;
             z-index: 1000;
-        }
-        header {
-            top: 0;
         }
         header h1 {
             margin: 0;
@@ -86,10 +84,12 @@
             font-size: 1.2em;
         }
         footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
             width: 100%;
+            margin-top: 20px;
         }
     </style>
 </head>
