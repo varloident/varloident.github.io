@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +12,13 @@
             background-color: #ffffff;
             color: #000000;
         }
-        header {
+        header, footer {
             background-color: #000000;
             color: #ffffff;
             padding: 20px;
             text-align: center;
+            width: 100%;
+            box-sizing: border-box;
         }
         header h1 {
             margin: 0;
@@ -72,13 +75,10 @@
             font-size: 1.2em;
         }
         footer {
-            background-color: #000000;
-            color: #ffffff;
-            text-align: center;
-            padding: 10px;
             position: fixed;
-            width: 100%;
             bottom: 0;
+            left: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -118,3 +118,4 @@
     </footer>
 </body>
 </html>
+```
